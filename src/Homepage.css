@@ -1,0 +1,15 @@
+.homepage {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ensure the header stays at the top */
+.homepage > *:first-child {
+    flex-shrink: 0;
+}
+
+/* Allow the main content to take remaining space */
+.homepage > *:not(:first-child) {
+    flex: 1;
+}
