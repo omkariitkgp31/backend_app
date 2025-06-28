@@ -1,0 +1,83 @@
+.topfold-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #d9e3d7;
+    padding: 50px 0;
+    box-sizing: border-box;
+}
+
+.topfold-inner {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+/* move rest of the topfold styles inside .topfold-inner context if needed */
+
+
+.topfold-image img {
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.topfold-textbox {
+    background-color: #f0eeee;
+    margin-left: -100px; /* overlap effect like reference */
+    padding: 40px;
+    border: 10px solid white;
+    max-width: 400px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.topfold-textbox h2 {
+    margin: 0;
+    font-size: 28px;
+    line-height: 1.2;
+    color: #555;
+    font-weight: 600;
+}
+
+.topfold-textbox .highlight {
+    color: #111;
+    font-weight: 700;
+}
+
+.topfold-link {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #333;
+    transition: color 0.3s, border-color 0.3s;
+}
+
+.topfold-link:hover {
+    color: #000;
+    border-color: #000;
+}
+
+@media (max-width: 768px) {
+    .topfold-container {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    .topfold-image img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .topfold-textbox {
+        margin-left: 0;
+    }
+}
